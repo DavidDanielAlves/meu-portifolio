@@ -263,6 +263,8 @@ main .about .container-redes h2 {
   font-weight: 800;
   font-size: 1.5em;
   margin: 1em 0;
+}
+main .about .container-redes .animationPularTexto {
   animation: pularTexto 400ms 2;
 }
 main .about .container-redes .list-redes {
@@ -479,7 +481,10 @@ main .about .animationConteudoEntrandoNaTela {
   color: black;
 }
 .bodyAlternative header .container-header nav .container-changebackground label i {
-  background-color: white;
+  padding: 12px 14px;
+}
+.bodyAlternative header .container-header nav .container-changebackground label i:hover {
+  background-color: orange;
 }
 .bodyAlternative header .container-header nav .container-menu label i {
   color: white;

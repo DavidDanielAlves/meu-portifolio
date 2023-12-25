@@ -16,7 +16,11 @@
                         color: black;
 
                         i {
-                            background-color: white;
+                            padding: 12px 14px;
+
+                            &:hover {
+                                background-color: orange;
+                            }
                         }
                     }
                 }
@@ -39,6 +43,7 @@
 
                             i {
                                 color: white;
+                                
                             }
                         }
 

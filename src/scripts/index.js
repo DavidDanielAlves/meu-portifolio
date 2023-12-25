@@ -7,6 +7,7 @@ const listaLinks = document.querySelector('.list-links');
 const containerAbout = document.querySelector('.container-about');
 const tituloPrincipal = document.querySelector('h1');
 const containerTextoSeta = document.querySelector('.container-texto-seta')
+const tituloRedes = document.querySelector('.container-redes h2');
 
 function mudarBackground (tema) {
     if (tema == 'theme dark') {
@@ -57,5 +58,6 @@ function animationQuandoEstavisivel (elementoObservavel, classAnimation) {
 animationQuandoEstavisivel(containerAbout, 'animationConteudoEntrandoNaTela');
 animationQuandoEstavisivel(tituloPrincipal, 'animationPularTexto');
 animationQuandoEstavisivel(containerTextoSeta, 'animationTextoEntrandoNaTela');
+animationQuandoEstavisivel(tituloRedes, 'animationPularTexto');
 
 
