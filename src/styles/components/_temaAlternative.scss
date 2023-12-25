@@ -1,0 +1,101 @@
+.bodyAlternative {
+    background-color: black;
+    color: white;
+
+    header {
+        border-bottom: 1px solid white;
+
+        .container-header {
+            h1 {
+                color: white;
+            }
+
+            nav {
+                .container-changebackground {
+                    label {
+                        color: black;
+
+                        i {
+                            background-color: white;
+                        }
+                    }
+                }
+
+                .container-menu {
+                    label {
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+
+                .list-links {
+                    li {
+                        a {
+
+                            p {
+                                color: white;
+                            }
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.184);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .projects {
+            .container-projects {
+                .container-texto-seta {
+                    background-color: black;
+                    
+                    h2 {
+                        color: white;
+                    }
+
+                    i {
+                        color: black;
+                    }
+                }
+            }
+
+            .link-projetos {
+                border: 1px solid white;
+            }
+        }
+
+        .about {
+            .container-about {
+                a {
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+
+    .rodape {
+        border-top: 1px solid white;
+
+        p {
+            color: white;
+        }
+
+        .list-redes {
+            li {
+                a {
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

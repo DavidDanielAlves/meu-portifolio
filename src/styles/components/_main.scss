@@ -1,0 +1,352 @@
+@keyframes textoEntrandonaTela {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+main {
+    .projects {
+        text-align: center;
+        .container-projects {
+            margin: 10% 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5%;
+
+            .container-texto-seta {
+                background-color: black;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                h2 {
+                    font-family: 'Rubik Doodle Shadow';
+                    width: 300px;
+                    font-size: 2em;
+                    margin-left: 3em;
+                    color: white;
+                    padding: 1em;
+                }
+
+                i {
+                    font-size: 24px;
+                    margin-right: 24px;
+                    color: white;
+                }
+            }
+
+            .animationTextoEntrandoNaTela {
+                animation: textoEntrandonaTela 1500ms 1;
+            }
+
+            .swiper {
+                width: 60%;
+                margin-right: 5%;
+
+                .swiper-wrapper {
+
+                    .swiper-slide {
+                        img {
+                            width: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .link-projetos {
+            cursor: pointer;
+            padding: 1em 3em;
+            background-color: lightblue;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: #405DE6;
+                border: 2px solid black;
+                color: white;
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+
+        .container-redes {
+            h2 {
+                font-weight: 800;
+                font-size: 1.5em;
+                margin: 1em 0;
+                animation: pularTexto 400ms 2;
+            }
+
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            width: 100%;
+            padding: 3em 0;
+
+            .list-redes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                li {
+                    margin-right: 16px;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        width: 150px;
+                        border-radius: 10px;
+                        padding: 0.5em 0;
+
+                        i {
+                            font-size: 24px;
+                        }
+
+                        &:hover {
+                            border: 1px solid white;
+
+                            i {
+                                animation: animationIcon 1s infinite;
+                                color: white;
+                            }
+
+                            p {
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .insta {
+                        &:hover {
+                            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
+                        }
+                    }
+
+                    .linkedin {
+                        &:hover {
+                            background-color: #405DE6;
+                        }
+                    }
+
+                    .github {
+                        &:hover {
+                            background-color: black;
+                        }
+                    }
+
+                    .vercel {
+                        &:hover {
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .container-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+
+            h2 {
+                margin-top: 1em;
+                font-weight: 700;
+                text-align: center;
+                font-size: 2em;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    width: 30%;
+                    display: inline-block;
+                    background-color: black;
+                    color: white;
+                    padding: 2em;
+                }
+
+                img {
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            img {
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+                background-color: lightblue;
+                padding: 1.2em 2em;
+                border-radius: 15px;
+
+                &:hover {
+                    background-color: rgb(0, 191, 255);
+                    border: 1px solid black;
+                }
+            }
+        }
+
+        .animationConteudoEntrandoNaTela {
+            animation: textoEntrandonaTela 1500ms 1;
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        .projects {
+            .container-projects {
+                .container-texto-seta {
+                    h2 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        .projects {
+            .container-projects {
+                flex-direction: column;
+                justify-content: center;
+
+                .container-texto-seta {
+                    background-color: white;
+
+                    h2 {
+                        color: black;
+                    }
+                }
+
+                .swiper {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+
+        .about {
+            .container-redes {
+                h2 {
+                    font-size: 1.3em;
+                }
+
+                .list-redes {
+
+                    li {
+                        a {
+                            width: fit-content;
+                            padding: 10px 15px;
+                            border-radius: 100%;
+
+
+                            p {
+                                display: none;
+                                color: white;
+                            }
+
+                            i {
+                                color: white;
+                            }
+
+                            &:hover {
+
+                                i {
+                                    animation: none;
+                                }
+                            }
+                        }
+
+                        .insta {
+                            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
+                        }
+
+                        .linkedin {
+                            background-color: #405DE6;
+                        }
+
+                        .github {
+                            background-color: black;
+                        }
+
+                        .vercel {
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+
+            .container-about {
+                div {
+                    flex-direction: column;
+
+                    p {
+                        width: 50%;
+                        padding: 1em;
+                        border-radius: 10px;
+                        margin-bottom: 1em;
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 357px) {
+    main {
+        .about {
+            .container-about {
+                div {
+                    flex-direction: column;
+
+                    p {
+                        width: 80%;
+                        padding: 1em;
+                        border-radius: 10px;
+                        margin-bottom: 1em;
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

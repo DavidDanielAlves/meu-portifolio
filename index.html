@@ -1,53 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Portifolio</title>
+    <title>Document</title>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- fontwersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- script swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="src/scripts/index.js" defer></script>
+
+    
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a href="index.html" class="cabecalho__menu__link">Home</a>
-            <a href="about.html" class="cabecalho__menu__link">Sobre mim</a>
-            <a href="cv.html" class="cabecalho__menu__link">Meu Curriculo</a>
-        </nav>
+    <header>
+        <div class="container-header">
+            <h1>Desenvolvedor Front-end</h1>
+        
+            <nav>
+                <div class="container-changebackground">
+                    <label for="changebackground"><i class="fa-solid fa-moon"></i></label>
+                    <input type="checkbox" name="changebackground" id="changebackground">
+                </div>
+
+                <div class="container-menu">
+                    <label for="menu-hamburger"><i class="fa-solid fa-bars"></i></label>
+                    <input type="checkbox" id="menu-hamburger">
+                </div>
+
+                <ul class="list-links hidden">
+                    <li class="item-link"><a href="./index.html">
+                        <p>Home</p>
+                        <i class="fa-solid fa-house"></i>
+                    </a></li>
+                    <li class="item-link"><a href="./src/pages/projetcts.html">
+                        <p>Projetos</p>
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </a></li>
+                    <li class="item-link"><a href="./src/pages/about.html">
+                        <p>Sobre mim</p>
+                        <i class="fa-solid fa-user"></i>
+                    </a></li>
+                    <button id="botao-fecha-menu"><i class="fa-regular fa-circle-xmark"></i></button>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Estou muito feliz de começar meus estudos em <strong
-                    class="titulo-destaque">HTML 5 e CSS 3</strong></h1>
-            <p class="apresentacao__conteudo__texto">Codando meu primeiro codigo em <strong>HTML 5 e CSS 3</strong>, sou
-                apaixonado por aprender novas
-                tecnologias, e estudar desenvolvimento front-end espero me aprofundar cada vez mais e me tornar um bom
-                programador.</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://github.com/DavidDanielAlves">
-                    <img src="assets/github.png" alt="Logo Guithub">
-                    Github
-                </a>
+    <main>
+        <section class="secao projects">
+            <div class="container-projects">
+                <div class="container-texto-seta">
+                    <h2>Veja alguns dos projetos que eu ja fiz</h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="src/img/projeto-aluraplus.png" alt=""></div>
+                        <div class="swiper-slide"><img src="src/img/projeto-vidflow.png" alt=""></div>
+                        <div class="swiper-slide"><img src="src/img/projeto-jogodonumerosecreto.png" alt=""></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <a href="./src/pages/projetcts.html" class="link-projetos">ver mais projetos</a>
+        </section>
 
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/david-daniel-alves-771039282/">
-                    <img src="assets/linkedin.png" alt="Logo Linkedin">
-                    Linkedin
-                </a>
-
-                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/deividi_dee/">
-                    <img src="assets/instagram.png" alt="Logo Instagram">
-                    Instagram
-                </a>
+        <section class="secao about">
+            <div class="container-redes">
+                <h2>Fique a vontade para mandar uma mensagem em minhas redes</h2>
+                <ul class="list-redes">
+                    <li><a target="_blank" href="https://www.instagram.com/digital_art_andtech/" class="insta">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram</p>
+                    </a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/david-daniel-alves-771039282/" class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p>Linkedin</p>
+                    </a></li>
+                    <li><a target="_blank" href="https://github.com/DavidDanielAlves" class="github">
+                        <i class="fa-brands fa-square-github"></i>
+                        <p>Github</p>
+                    </a></li>
+                    <li><a target="_blank" href="https://vercel.com/daviddanielalves" class="vercel">
+                        <i class="fa-brands fa-vuejs"></i>
+                        <p>Vercel</p>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="container-about">
+                <h2>Um pouco sobre mim</h2>
+                <div>
+                    <p>Sou deseenvolvedor front end a 1 ano, amo programação e adoro jogar videogames e ver filmes e series no meu tempo livre, sou competitivo e focado gosto de sempre entregar um bom resultado</p>
+                    <img src="src/img/programador-feliz.jpg" alt="">
+                </div>
+                <a href="#">Saiba mais sobre mim</a>
             </div>
         </section>
-        <img src="assets/imgeu.jpeg" alt="foto david daniel alves" class="minhafoto">
     </main>
 
     <footer class="rodape">
-        <p>Desenvido por David Daniel Alves</p>
+        <p>created by deseenvolvedor <a target="_blank" href="https://www.instagram.com/digital_art_andtech/">@digital art end tech</a></p>
+
+        <ul class="list-redes">
+            <li><a target="_blank" href="https://www.instagram.com/digital_art_andtech/">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+
+            <li><a target="_blank" href="https://www.linkedin.com/in/david-daniel-alves-771039282/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+
+            <li><a target="_blank" href="https://github.com/DavidDanielAlves">
+                <i class="fa-brands fa-square-github"></i>
+            </a></li>
+
+            <li><a target="_blank" href="https://vercel.com/daviddanielalves">
+                <i class="fa-brands fa-vuejs"></i>
+            </a></li>
+        </ul>
     </footer>
 </body>
 

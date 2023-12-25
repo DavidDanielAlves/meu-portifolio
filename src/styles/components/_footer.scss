@@ -1,0 +1,37 @@
+.rodape {
+    margin-top: 10%;
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 2em 0;
+
+    p {
+        width: 90%;
+        margin: auto;
+        
+        a {
+            color: blue;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .list-redes {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 1em;
+
+        li {
+            a {
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
