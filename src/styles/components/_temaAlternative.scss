@@ -84,6 +84,35 @@
                 }
             }
         }
+
+
+        .projetos {
+            .container-projeto {
+                h2 {
+                    color: white;
+                }
+
+                img {
+                    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+                }
+
+                .container-descricao-projeto {
+                    h3 {
+                        color: white;
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            .swiper {
+                span {
+                    color: white;
+                }
+            }
+        }
     }
 
     .rodape {

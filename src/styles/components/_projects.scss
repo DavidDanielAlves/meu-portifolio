@@ -1,0 +1,143 @@
+@keyframes piscar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    .projetos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .container-projeto {
+            background-color: transparent;
+            width: 30%;
+            text-align: center;
+            margin-left: 5%;
+            margin-bottom: 5%;
+
+            h2 {
+                font-family: 'Rubik Doodle Shadow';
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: 1em;
+                text-transform: uppercase;
+                color: black;
+            }
+
+            img {
+                width: 100%;
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+            }
+            
+            .container-descricao-projeto {
+                h3 {
+                    font-family: 'Rubik Doodle Shadow';
+                    color: black;
+                    font-size: 2em;
+                    margin: 16px 0;
+                    font-weight: 700;
+                }
+
+                p {
+                    background-color: transparent;
+                    width: 90%;
+                    margin: auto;
+                    border-radius: 5px;
+                    color: black;
+                    margin-top: 2em;
+                }
+            }
+        }
+
+        .swiper {
+            width: 40%;
+            margin-right: 5%;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+
+            span {
+                font-family: 'Rubik Doodle Shadow';
+                font-size: 1.5em;
+                
+            }
+
+    
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.8;
+                        border-radius: 10px;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    
+                }
+
+            }
+
+
+        }
+        
+    }
+
+
+}
+
+.rodape {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    main {
+        .projetos {
+            flex-direction: column;
+    
+            .container-projeto {
+                width: 100%;
+                margin: 0;
+
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                img {
+                    width: 60%;
+                }
+
+                .container-descricao-projeto {
+                    h3 {
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+    
+            .swiper {
+                width: 100%;
+                margin: 0;
+                margin-top: 1.5em;
+
+                span {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+}
