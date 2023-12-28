@@ -57,6 +57,35 @@
     }
 
     main {
+        .tecnologias {
+            h2 {
+                color: white;
+            }
+
+            .list-tecnologias {
+                li {
+                    background-color: black;
+                    border: none;
+                }
+            }
+
+            .container-clean-code {
+                p {
+                    color: white;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+
+            .container-responsive {
+                p {
+                    color: white;
+                }
+            }
+        }
+
         .projects {
             .container-projects {
                 .container-texto-seta {

@@ -194,6 +194,95 @@ header .container-header nav .list-links button {
     transform: translateX(0);
   }
 }
+main .tecnologias h2 {
+  font-family: "Rubik Doodle Shadow";
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  margin: 1em 0;
+}
+main .tecnologias .list-tecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 32px;
+}
+main .tecnologias .list-tecnologias li {
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 10px;
+}
+main .tecnologias .list-tecnologias li i {
+  color: white;
+  font-size: 2em;
+}
+main .tecnologias .list-tecnologias li p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main .tecnologias .list-tecnologias .html {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em 1.5em;
+  border-radius: 100%;
+}
+main .tecnologias .list-tecnologias .html i, main .tecnologias .list-tecnologias .html p {
+  color: orange;
+}
+main .tecnologias .list-tecnologias .css {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em 2em;
+  border-radius: 100%;
+}
+main .tecnologias .list-tecnologias .css i, main .tecnologias .list-tecnologias .css p {
+  color: #405DE6;
+}
+main .tecnologias .list-tecnologias .javascript {
+  background-color: black;
+  border: none;
+}
+main .tecnologias .list-tecnologias .javascript i, main .tecnologias .list-tecnologias .javascript p {
+  color: yellow;
+}
+main .tecnologias .list-tecnologias .bootstrap i, main .tecnologias .list-tecnologias .bootstrap p {
+  color: purple;
+}
+main .tecnologias .list-tecnologias .tailwind .tailwindcss i {
+  font-size: 1.3em;
+  color: #5851DB;
+  font-weight: 700;
+}
+main .tecnologias .list-tecnologias .tailwind p {
+  color: #5851DB;
+}
+main .tecnologias .container-clean-code {
+  text-align: center;
+}
+main .tecnologias .container-clean-code p {
+  font-size: 2.5em;
+  margin: 1em 0;
+}
+main .tecnologias .container-clean-code p i {
+  font-size: 1em;
+}
+main .tecnologias .container-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+main .tecnologias .container-responsive p {
+  font-size: 2em;
+}
+main .tecnologias .container-responsive img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
 main .projects {
   text-align: center;
 }
@@ -202,7 +291,7 @@ main .projects .container-projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 main .projects .container-projects .container-texto-seta {
   background-color: black;
@@ -250,7 +339,7 @@ main .about {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 5%;
 }
 main .about .container-redes {
   background-color: lightblue;
@@ -347,6 +436,7 @@ main .about .container-about a {
   background-color: lightblue;
   padding: 1.2em 2em;
   border-radius: 15px;
+  margin-bottom: 3%;
 }
 main .about .container-about a:hover {
   background-color: rgb(0, 191, 255);
@@ -362,6 +452,41 @@ main .about .animationConteudoEntrandoNaTela {
   }
 }
 @media (max-width: 900px) {
+  main .tecnologias h2 {
+    font-size: 1.5em;
+  }
+  main .tecnologias .list-tecnologias li {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  main .tecnologias .list-tecnologias .html, main .tecnologias .list-tecnologias .css {
+    padding: 0;
+    border: none;
+  }
+  main .tecnologias .list-tecnologias .javascript {
+    background-color: transparent;
+  }
+  main .tecnologias .list-tecnologias .javascript i {
+    background-color: black;
+  }
+  main .tecnologias .list-tecnologias .javascript p {
+    color: black;
+  }
+  main .tecnologias .container-clean-code p {
+    font-size: 2em;
+  }
+  main .tecnologias .container-responsive {
+    width: 90%;
+    margin: auto;
+  }
+  main .tecnologias .container-responsive p {
+    width: 50%;
+    font-size: 1.5em;
+  }
+  main .tecnologias .container-responsive img {
+    width: 50%;
+  }
   main .projects .container-projects {
     flex-direction: column;
     justify-content: center;
@@ -421,7 +546,13 @@ main .about .animationConteudoEntrandoNaTela {
     width: 60%;
   }
 }
-@media (max-width: 357px) {
+@media (max-width: 500px) {
+  main .tecnologias .list-tecnologias {
+    flex-wrap: wrap;
+  }
+  main .tecnologias .container-clean-code p {
+    font-size: 1.5em;
+  }
   main .about .container-about div {
     flex-direction: column;
   }
@@ -497,6 +628,22 @@ main .about .animationConteudoEntrandoNaTela {
 }
 .bodyAlternative header .container-header nav .list-links li:hover {
   background-color: rgba(255, 255, 255, 0.184);
+}
+.bodyAlternative main .tecnologias h2 {
+  color: white;
+}
+.bodyAlternative main .tecnologias .list-tecnologias li {
+  background-color: black;
+  border: none;
+}
+.bodyAlternative main .tecnologias .container-clean-code p {
+  color: white;
+}
+.bodyAlternative main .tecnologias .container-clean-code p i {
+  color: white;
+}
+.bodyAlternative main .tecnologias .container-responsive p {
+  color: white;
 }
 .bodyAlternative main .projects .container-projects .container-texto-seta {
   background-color: black;
@@ -639,5 +786,80 @@ main .projetos .swiper .swiper-wrapper .swiper-slide img:hover {
   }
   main .projetos .swiper span {
     font-size: 1em;
+  }
+}
+main .about-me {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0;
+  gap: 5%;
+}
+main .about-me .container-about-me {
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+}
+main .about-me .container-about-me h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+main .about-me .container-about-me p {
+  margin: 5% 0;
+}
+main .about-me .list-redes {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+main .about-me .list-redes li a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+main .about-me img {
+  width: 30%;
+}
+
+@media (max-width: 1200px) {
+  main .about-me {
+    flex-direction: column-reverse;
+  }
+  main .about-me .container-about-me {
+    width: 60%;
+  }
+  main .about-me img {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 900px) {
+  main .about-me .container-about-me {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  main .about-me {
+    flex-direction: column-reverse;
+    background-color: white;
+  }
+  main .about-me .container-about-me {
+    width: 100%;
+    border: none;
+  }
+  main .about-me .container-about-me p {
+    width: 90%;
+    margin: auto;
+  }
+  main .about-me .list-redes {
+    background-color: white;
+    margin-top: 1em;
+  }
+  main .about-me img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
