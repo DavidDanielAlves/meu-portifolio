@@ -68,11 +68,15 @@ main {
             }
 
             .javascript {
-                background-color: black;
-                border: none;
+                background-color: white;
 
-                i, p {
+                i {
+                    background-color: black;
                     color: yellow;
+                }
+
+                p {
+                    color: black;
                 }
             }
 
@@ -160,7 +164,7 @@ main {
                 }
             }
 
-            .animationTextoEntrandoNaTela {
+            .animationConteudoEntrandoNaTela {
                 animation: textoEntrandonaTela 1500ms 1;
             }
 
@@ -423,6 +427,10 @@ main {
                     }
                 }
 
+                .animationConteudoEntrandoNaTela {
+                    animation: none;
+                }
+
                 .swiper {
                     width: 90%;
                     margin: auto;
@@ -517,6 +525,13 @@ main {
 
         }
 
+        .projects {
+            .link-projetos {
+                padding: 10px 1em;
+                font-size: 12px;
+            }
+        }
+
         .about {
             .container-about {
                 div {
@@ -534,6 +549,13 @@ main {
                         width: 100%;
                         border-radius: 0;
                     }
+
+                }
+
+                a {
+                    padding: 10px 1.5em;
+                    border-radius: 10px;
+                    font-size: 12px;
                 }
             }
         }

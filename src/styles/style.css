@@ -243,11 +243,14 @@ main .tecnologias .list-tecnologias .css i, main .tecnologias .list-tecnologias 
   color: #405DE6;
 }
 main .tecnologias .list-tecnologias .javascript {
-  background-color: black;
-  border: none;
+  background-color: white;
 }
-main .tecnologias .list-tecnologias .javascript i, main .tecnologias .list-tecnologias .javascript p {
+main .tecnologias .list-tecnologias .javascript i {
+  background-color: black;
   color: yellow;
+}
+main .tecnologias .list-tecnologias .javascript p {
+  color: black;
 }
 main .tecnologias .list-tecnologias .bootstrap i, main .tecnologias .list-tecnologias .bootstrap p {
   color: purple;
@@ -312,7 +315,7 @@ main .projects .container-projects .container-texto-seta i {
   margin-right: 24px;
   color: white;
 }
-main .projects .container-projects .animationTextoEntrandoNaTela {
+main .projects .container-projects .animationConteudoEntrandoNaTela {
   animation: textoEntrandonaTela 1500ms 1;
 }
 main .projects .container-projects .swiper {
@@ -497,6 +500,9 @@ main .about .animationConteudoEntrandoNaTela {
   main .projects .container-projects .container-texto-seta h2 {
     color: black;
   }
+  main .projects .container-projects .animationConteudoEntrandoNaTela {
+    animation: none;
+  }
   main .projects .container-projects .swiper {
     width: 90%;
     margin: auto;
@@ -553,6 +559,10 @@ main .about .animationConteudoEntrandoNaTela {
   main .tecnologias .container-clean-code p {
     font-size: 1.5em;
   }
+  main .projects .link-projetos {
+    padding: 10px 1em;
+    font-size: 12px;
+  }
   main .about .container-about div {
     flex-direction: column;
   }
@@ -566,6 +576,11 @@ main .about .animationConteudoEntrandoNaTela {
   main .about .container-about div img {
     width: 100%;
     border-radius: 0;
+  }
+  main .about .container-about a {
+    padding: 10px 1.5em;
+    border-radius: 10px;
+    font-size: 12px;
   }
 }
 .rodape {
@@ -636,6 +651,9 @@ main .about .animationConteudoEntrandoNaTela {
   background-color: black;
   border: none;
 }
+.bodyAlternative main .tecnologias .list-tecnologias .javascript p {
+  color: yellow;
+}
 .bodyAlternative main .tecnologias .container-clean-code p {
   color: white;
 }
@@ -652,7 +670,12 @@ main .about .animationConteudoEntrandoNaTela {
   color: white;
 }
 .bodyAlternative main .projects .container-projects .container-texto-seta i {
-  color: black;
+  color: white;
+}
+@media (max-width: 900px) {
+  .bodyAlternative main .projects .container-projects .container-texto-seta i {
+    color: black;
+  }
 }
 .bodyAlternative main .projects .link-projetos {
   border: 1px solid white;

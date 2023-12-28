@@ -67,6 +67,12 @@
                     background-color: black;
                     border: none;
                 }
+
+                .javascript {
+                    p {
+                        color: yellow;
+                    }
+                }
             }
 
             .container-clean-code {
@@ -96,7 +102,13 @@
                     }
 
                     i {
-                        color: black;
+                        color: white;
+                    }
+
+                    @media (max-width: 900px) {
+                        i {
+                            color: black;
+                        }
                     }
                 }
             }
