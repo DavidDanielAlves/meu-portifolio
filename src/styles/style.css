@@ -124,6 +124,14 @@ header .container-header nav .list-links button {
   display: none;
 }
 
+@media (max-width: 900px) {
+  header .container-header {
+    top: inherit;
+    bottom: 0;
+    border-top: 1px solid black;
+    box-shadow: 0 -5px 10px 0 black;
+  }
+}
 @media (max-width: 760px) {
   header .container-header {
     flex-direction: column;
@@ -132,10 +140,6 @@ header .container-header nav .list-links button {
 @media (max-width: 500px) {
   header .container-header {
     flex-direction: row;
-    top: inherit;
-    bottom: 0;
-    border-top: 1px solid black;
-    box-shadow: 0 -5px 10px 0 black;
   }
   header .container-header h1 {
     font-size: 1.5em;
@@ -585,6 +589,12 @@ main .about .container-redes .list-redes li .vercel:hover {
 }
 .bodyAlternative main .about-me {
   background-color: black;
+}
+.bodyAlternative main .about-me .container-about-me {
+  background-color: black;
+}
+.bodyAlternative main .about-me .container-about-me p {
+  color: white;
 }
 .bodyAlternative main .projects .container-projects .container-texto-seta {
   background-color: black;

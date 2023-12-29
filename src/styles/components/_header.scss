@@ -152,6 +152,17 @@ header {
     }
 }
 
+@media (max-width: 900px) {
+    header {
+        .container-header {
+            top: inherit;
+            bottom: 0;
+            border-top: 1px solid black;
+            box-shadow: 0 -5px 10px 0 black;
+        }
+    }
+}
+
 @media (max-width: 760px) {
     header {
         .container-header {
@@ -164,10 +175,6 @@ header {
     header {
         .container-header {
             flex-direction: row;
-            top: inherit;
-            bottom: 0;
-            border-top: 1px solid black;
-            box-shadow: 0 -5px 10px 0 black;
 
             h1 {
                 font-size: 1.5em;

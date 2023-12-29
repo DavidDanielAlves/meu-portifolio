@@ -93,6 +93,14 @@
 
         .about-me {
             background-color: black;
+
+            .container-about-me {
+                background-color: black;
+                
+                p {
+                    color: white;
+                }
+            }
         }
 
         .projects {
