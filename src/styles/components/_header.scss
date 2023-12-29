@@ -4,10 +4,11 @@
     0% {
         transform: rotate(0);
     }
+
     25% {
         transform: rotate(-30deg);
     }
-    
+
     50% {
         transform: rotate(30deg);
     }
@@ -31,22 +32,32 @@
     }
 }
 
-header {
-    border: 1px solid black;
+@keyframes mudarIcon {
+    from {
+        
+    }
+}
 
+header {
     .container-header {
-        width: 90%;
-        margin: auto;
+        background-color: white;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        padding: 15px 0;
+        border-bottom: 1px solid black;
+        box-shadow: 0 5px 10px 0 black;
 
         h1 {
             font-size: 2em;
             font-weight: 900;
             font-family: 'Rubik Doodle Shadow';
             color: blue;
+            padding-left: 5%;
         }
 
         .animationPularTexto {
@@ -57,6 +68,7 @@ header {
             display: flex;
             align-items: center;
             gap: 32px;
+            padding-right: 5%;
 
             .container-changebackground {
                 label {
@@ -65,6 +77,7 @@ header {
                         font-size: 1.5em;
                         margin-top: 0.5em;
                         border: 1px solid black;
+                        box-shadow: 0 0 3px 3px rgba(13, 0, 255, 0.3);
                         padding: 10px 15px;
                         border-radius: 100%;
 
@@ -85,7 +98,7 @@ header {
                             background-color: orange;
                         }
                     }
-                    
+
                 }
 
 
@@ -99,6 +112,7 @@ header {
                 label {
                     display: none;
                 }
+
                 input {
                     display: none;
                 }
@@ -128,7 +142,7 @@ header {
                     }
 
                 }
-                
+
                 button {
                     display: none;
                 }
@@ -150,7 +164,11 @@ header {
     header {
         .container-header {
             flex-direction: row;
-            
+            top: inherit;
+            bottom: 0;
+            border-top: 1px solid black;
+            box-shadow: 0 -5px 10px 0 black;
+
             h1 {
                 font-size: 1.5em;
             }
@@ -167,11 +185,11 @@ header {
                         }
                     }
                 }
-    
+
                 .container-menu {
                     label {
                         display: block;
-                        
+
                         i {
                             font-size: 24px;
                         }
@@ -180,10 +198,10 @@ header {
 
                 .list-links {
                     position: absolute;
-                    top: 0;
-                    bottom: 0;
+                    bottom: 90px;
                     right: 0;
                     flex-direction: column;
+                    justify-content: flex-end;
                     height: 100vh;
                     background-color: white;
                     width: 250px;
@@ -235,4 +253,3 @@ header {
 
     }
 }
-

@@ -10,6 +10,8 @@
 
 main {
     .tecnologias {
+        margin-bottom: 5%;
+        
         h2 {
             font-family: 'Rubik Doodle Shadow';
             font-size: 2em;
@@ -27,8 +29,6 @@ main {
 
             li {
                 text-align: center;
-                background-color: white;
-                border: 1px solid black;
                 padding: 1em;
                 border-radius: 10px;
             
@@ -45,8 +45,6 @@ main {
             }
 
             .html {
-                background-color: white;
-                border: 1px solid black;
                 padding: 1em 1.5em;
                 border-radius: 100%;
 
@@ -57,8 +55,6 @@ main {
             }
 
             .css {
-                background-color: white;
-                border: 1px solid black;
                 padding: 1em 2em;
                 border-radius: 100%;
 
@@ -131,58 +127,7 @@ main {
             }
         }
 
-    }
-
-    .projects {
-        text-align: center;
-        .container-projects {
-            margin: 10% 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 3%;
-
-            .container-texto-seta {
-                background-color: black;
-                display: flex;
-                align-items: center;
-                gap: 16px;
-
-                h2 {
-                    font-family: 'Rubik Doodle Shadow';
-                    width: 300px;
-                    font-size: 2em;
-                    margin-left: 3em;
-                    color: white;
-                    padding: 1em;
-                }
-
-                i {
-                    font-size: 24px;
-                    margin-right: 24px;
-                    color: white;
-                }
-            }
-
-            .animationConteudoEntrandoNaTela {
-                animation: textoEntrandonaTela 1500ms 1;
-            }
-
-            .swiper {
-                width: 60%;
-                margin-right: 5%;
-                
-                .swiper-wrapper {
-
-                    .swiper-slide {
-                        img {
-                            width: 100%;
-                            border-radius: 10px;
-                        }
-                    }
-                }
-            }
-        }
+    
 
         .link-projetos {
             cursor: pointer;
@@ -284,61 +229,6 @@ main {
                 }
             }
 
-        }
-
-        .container-about {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 32px;
-
-            h2 {
-                margin-top: 1em;
-                font-weight: 700;
-                text-align: center;
-                font-size: 2em;
-            }
-
-            div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                p {
-                    width: 30%;
-                    display: inline-block;
-                    background-color: black;
-                    color: white;
-                    padding: 2em;
-                }
-
-                img {
-                    border-radius: 10px;
-                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
-                }
-            }
-
-            img {
-                display: inline-block;
-            }
-
-            a {
-                display: block;
-                background-color: lightblue;
-                padding: 1.2em 2em;
-                border-radius: 15px;
-                margin-bottom: 3%;
-
-                &:hover {
-                    background-color: rgb(0, 191, 255);
-                    border: 1px solid black;
-                }
-            }
-        }
-
-        .animationConteudoEntrandoNaTela {
-            animation: textoEntrandonaTela 1500ms 1;
         }
 
     }

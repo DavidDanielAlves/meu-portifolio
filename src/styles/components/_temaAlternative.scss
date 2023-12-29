@@ -3,11 +3,9 @@
     color: white;
 
     header {
-        border-bottom: 1px solid white;
-
         .container-header {
             h1 {
-                color: white;
+                color: black;
             }
 
             nav {
@@ -17,6 +15,7 @@
 
                         i {
                             padding: 12px 14px;
+                            box-shadow: 0 0 3px 3px rgba(255, 166, 0, 0.6);
 
                             &:hover {
                                 background-color: orange;
@@ -28,7 +27,7 @@
                 .container-menu {
                     label {
                         i {
-                            color: white;
+                            color: black;
                         }
                     }
                 }
@@ -38,17 +37,17 @@
                         a {
 
                             p {
-                                color: white;
+                                color: black;
                             }
 
                             i {
-                                color: white;
-                                
+                                color: black;
+
                             }
                         }
 
                         &:hover {
-                            background-color: rgba(255, 255, 255, 0.184);
+                            background-color: rgba(0, 0, 0, 0.184);
                         }
                     }
                 }
@@ -92,11 +91,15 @@
             }
         }
 
+        .about-me {
+            background-color: black;
+        }
+
         .projects {
             .container-projects {
                 .container-texto-seta {
                     background-color: black;
-                    
+
                     h2 {
                         color: white;
                     }

@@ -15,4 +15,4 @@ abrirFecharMenu();
 animationQuandoEstavisivel(containerAbout, 'animationConteudoEntrandoNaTela');
 animationQuandoEstavisivel(tituloPrincipal, 'animationPularTexto');
 animationQuandoEstavisivel(tituloRedes, 'animationPularTexto');
-animationQuandoEstavisivel(containerConteudo, 'animationConteudoEntrandoNaTela')
+animationQuandoEstavisivel(containerConteudo, 'animationConteudoEntrandoNaTela');

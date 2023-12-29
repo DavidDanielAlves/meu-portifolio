@@ -136,6 +136,14 @@ main {
                 span {
                     font-size: 1.5em;
                 }
+
+                .swiper-button-prev {
+                    display: none;
+                }
+
+                .swiper-button-next {
+                    display: none;
+                }
             }
         }
     }
